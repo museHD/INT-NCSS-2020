@@ -37,7 +37,7 @@ animal = input("What animal would you like? ")
 amount = int(input("How many? "))
 
 if animal.isupper():
-	print("Woah! No need to shoud, you'll scare the animals!")
+	print("Woah! No need to shout, you'll scare the animals!")
 elif amount < 1:
 	print("That's sad. No pet for you today.")
 elif amount == 1:
