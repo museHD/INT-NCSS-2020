@@ -41,6 +41,6 @@ if animal.isupper():
 elif amount < 1:
 	print("That's sad. No pet for you today.")
 elif amount == 1:
-	print(f"Great, here's your {animal}")
+	print(f"Great, here's your {animal}!")
 elif amount > 1:
 	print(f"Ok! {amount} {animal}s coming right up!")
