@@ -47,15 +47,16 @@ name = input("Who's next to donate? ")
 while name != '':
 	money = float(input("How much are you donating? "))
 	if name not in donors:
-		print(f"Thanks {name}! A first donation of ${money}.")
+		print(f"Thanks {name}! A first donation of ${money:.2f}!")
 		donors.append(name)
 	elif name in donors:
-		print(f"Another generous donation from {name} of ${money}.")
+		print(f"Another generous donation from {name} of ${money:.2f}!")
 	
 	total = money + total
 	name = input("Who's next to donate? ")
 
-print(f"That's it folks! We raised ${total}!")
+donors.sort()
+print(f"That's it folks! We raised ${total:.2f}!")
 print("All thanks to our delicious donors:")
 for donor in donors:
 	print(f"🍩 {donor}")
